@@ -30,3 +30,8 @@
 .country-table .right-text {
   text-align: right;
 }
+
+.controller-row {
+  padding: 5px 0;
+  user-select: none;
+}
