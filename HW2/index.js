@@ -133,7 +133,7 @@ d3.json('https://alexanderkub.github.io/DataVis/data/countries_2012.json', funct
     });
 
   function AggregateData() {
-    var aggr_data = d3.nest()
+    var aggrData = d3.nest()
     .key(function(d) { return d.continent;})
     .rollup(function(leaves) {
       return {
@@ -152,10 +152,10 @@ d3.json('https://alexanderkub.github.io/DataVis/data/countries_2012.json', funct
       };
     }).entries(filtredData);
     tbody.selectAll('tr.row').remove();
-    aggr_data = aggr_data.map(function(item) {
-      return item.values;
+    aggrData = aggrData.map(function(item) {
+      return item.value;
     });
-    createRowsWithData(aggr_data);
+    createRowsWithData(aggrData);
     sortRowsByTitle(sortedTitle, sortedAscending);
   }
 

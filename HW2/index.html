@@ -2,10 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+      body, html {
+          height: 100%;
+          line-height: 1.8;
+      }
+      /* Full height image header */
+      .bgimg-1 {
+          background-position: center;
+          background-size: cover;
+          background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+          min-height: 100%;
+      }
+      .w3-button {
+          padding: 16px;
+          width: 120px;
+      }
+    </style>
   </head>
   <body>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="index.js"></script>
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+        <a href="./table.html"
+          class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Table</a>
+        <br>
+        <a href="./barchart.html"
+          class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Barchart</a>
+      </div>
+    </header>
   </body>
 </html>
